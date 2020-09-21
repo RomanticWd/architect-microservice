@@ -1,2 +1,2 @@
-# architect-microservice
-《架构探险-轻量级微服务架构》读书笔记
+## architect-microservice
+《架构探险-轻量级微服务架构》阅读笔记，希望借助于这本书搭建一套轻量级的微服务框架，理解微服务的实现原理。
