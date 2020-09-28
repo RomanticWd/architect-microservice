@@ -3,18 +3,18 @@ package site.lgong.sample.registry;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.zookeeper.*;
 import org.springframework.stereotype.Component;
-import site.lgong.framework.registry.ServuceRegistry;
+import site.lgong.framework.registry.ServiceRegistry;
 
 import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
 
 @Slf4j
 @Component
-public class ServiceRegistryImpl implements ServuceRegistry, Watcher {
+public class ServiceRegistryImpl implements ServiceRegistry, Watcher {
 
     private static CountDownLatch latch = new CountDownLatch(1);
     private static final String REGISTRY_PATH = "/registry";
-    private static final int SESSION_TIMEOUT = 500;
+    private static final int SESSION_TIMEOUT = 5000;
 
     private ZooKeeper zooKeeper;
 
