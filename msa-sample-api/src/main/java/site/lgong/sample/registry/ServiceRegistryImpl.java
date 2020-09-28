@@ -1,5 +1,6 @@
 package site.lgong.sample.registry;
 
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.zookeeper.*;
 import org.springframework.stereotype.Component;
@@ -10,6 +11,7 @@ import java.util.concurrent.CountDownLatch;
 
 @Slf4j
 @Component
+@NoArgsConstructor
 public class ServiceRegistryImpl implements ServiceRegistry, Watcher {
 
     private static CountDownLatch latch = new CountDownLatch(1);
