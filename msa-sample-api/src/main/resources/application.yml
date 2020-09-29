@@ -4,7 +4,7 @@ server:
 
 ## zookeeper的注册地址
 registry:
-  servers: 127.0.0.1:2181
+  servers: 49.234.12.199:2181
 
 logging:
   level:
