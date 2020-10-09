@@ -6,3 +6,7 @@
 2. 基于docker启动的zookeeper连接注册失败，最终采用windows环境下的伪集群方式搭建
 3. zookeeper集群搭建方式（https://www.jianshu.com/p/3047599c13c7），也可以通过百度网盘下载直接使用（链接：https://pan.baidu.com/s/17sepmZyq6rpvrLQPJVCttA 提取码：6ynt ）解压后放到d盘下根目录下，进入文件夹zookeeper-start.bat执行即可启动。
 也可以解压到其他路径，需要修改几个节点目录conf文件夹下的zoo.cfg，修改其中dataDir属性为对应解压目录。
+
+## 2020-10-09
+1. 增加msa-sample-web模块，使用NodeJs搭建服务发现组件。
+2. NodeJs中关于zookeeper的连接与使用。
