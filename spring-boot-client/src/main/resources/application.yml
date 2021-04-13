@@ -1,0 +1,16 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+        instance:
+          name: HelloService
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        # SpringBootActuator监控暴露所有接口
+        include: "*"
