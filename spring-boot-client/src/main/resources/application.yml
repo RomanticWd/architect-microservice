@@ -5,6 +5,8 @@ spring:
         url: http://localhost:8080
         instance:
           name: HelloService
+        username: admin
+        password: admin
 server:
   port: 8081
 
@@ -12,5 +14,7 @@ management:
   endpoints:
     web:
       exposure:
-        # SpringBootActuator¼à¿Ø±©Â¶ËùÓĞ½Ó¿Ú
+        # SpringBootActuatorå¼€å¯æ‰€æœ‰æƒé™
         include: "*"
+
+
